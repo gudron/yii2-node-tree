@@ -5,7 +5,7 @@ use yii\web\AssetBundle;
 
 class ARTreeAssets extends AssetBundle
 {
-    public $sourcePath = '@vendor/bariew/yii2-node-tree/views/jsTree';
+    public $sourcePath = '@vendor/kotelnikov/yii2-node-tree/views/jsTree';
     public $js = [
         'src/jstree.js',
         'src/jstree.dnd.js',
