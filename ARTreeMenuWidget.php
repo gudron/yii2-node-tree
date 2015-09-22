@@ -21,7 +21,7 @@ class ARTreeMenuWidget extends \yii\base\Widget
                 "animation" => 0
             ],
             "plugins" => [
-                "contextmenu", "dnd", "search", "types"
+                "contextmenu", "dnd", "search", "types", "wholerow", 'state'
             ],
             "dnd"   => [
                 "is_draggable"  => true,
@@ -34,7 +34,10 @@ class ARTreeMenuWidget extends \yii\base\Widget
             "search"  =>   [
                 "fuzzy"   => false
             ],
-
+            "themes" => [
+                "theme" => "xenon",
+                "dots" => false,
+            ],
             "contextmenu" => [
                 "show_at_node"    => false,
                 "items" =>    [
@@ -92,9 +95,6 @@ class ARTreeMenuWidget extends \yii\base\Widget
                         position: data.position
                     },
                     success: function(response){
-                        if(!response){
-                            return;
-                        }
                         var attributes = JSON.parse(response);
                         $("a[data-id="+data.node.id+"]").prop("href", attributes.a_attr.href);
                     },
@@ -125,7 +125,7 @@ class ARTreeMenuWidget extends \yii\base\Widget
                     return;
                 }
                 window.location.href = data.node.a_attr.href;
-            }',
+            }'
         ];
     }
     

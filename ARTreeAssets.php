@@ -14,10 +14,11 @@ class ARTreeAssets extends AssetBundle
         'src/jstree.state.js',
         'src/jstree.contextmenu.js',
         'src/jstree.checkbox.js',
+        'src/jstree.wholerow.js',
         'artree.js'
     ];
     public $css = [
-        'src/themes/default/style.css',
+        'src/themes/xenon/style.css',
         'artree.css'
     ];
     public $depends = [

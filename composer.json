@@ -1,5 +1,5 @@
 {
-    "name": "bariew/yii2-node-tree",
+    "name": "kotelnikov/yii2-node-tree",
     "description": "Uses unique ids to create tree and display it with jstree",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","node","tree"],
